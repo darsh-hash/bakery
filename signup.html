@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(back.png);
+  background-repeat: none;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+  
+}
+
+.container {
+  /*padding: 16px;*/
+  background-color: ghostwhite;
+  margin-left: 10px;
+  max-width: 650px;
+  padding: 3px;
+  border-radius: 2px;
+  max-height: 800px;
+}
+
+input[type=text], input[type=password], input[type=bignit]{
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  background: ghostwhite;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=bignit]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: plum;
+  color: black;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+a {
+  color: blueviolet;
+}
+
+
+.signin {
+  background-color: plum;
+  text-align: center;
+}
+.top{
+  margin-top: 35px;
+}
+.bottom{
+  margin-bottom: 35px;
+}
+
+</style>
+</head>
+<body>
+
+
+    <div class="top"></div>
+  <div class="container">
+    <h1 align="center">Bakeology</h1>
+    <form action="signup.php" method="post">
+    <hr>
+   
+
+    <label for="name"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="firstname" id="name" required>
+
+    <label for="name"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter last Name" name="lastname" id="name" required>
+
+    <label for="Address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="add" id="add" required>
+
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="Phone-number"><b>Phone Number</b></label>
+    <input type="bignit" placeholder="phone-Number" name="phone-number" id="phone-number" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <input type="submit" name="submit" class="registerbtn" id="" value="signup">
+  </div>
+  
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Login</a>.</p>
+    <div class="bottom"></div>
+  </div>
+</form>
+
+</body>
+</html>
+

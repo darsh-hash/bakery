@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: ghostwhite;
+  margin-left: 10px;
+  max-width: 500px;
+  padding: 5px;
+  border-radius: 2px;
+  max-height: 900px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: ghostwhite;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: plum;
+  color: ghostwhite;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: plum;
+}
+.top{
+  margin-top: 150px;
+}
+
+.signin {
+  background-color: black;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+  <div class="top">
+  <div class="container">
+    <form action="login.php" method="post">
+    <h1 align="center">Bakeology</h1>
+    <hr>
+     
+    <label for="name"><b>Enter Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <input type="submit" name="submit" class="registerbtn" id="" value="Login">
+
+
+  </div>
+  </div>
+</form>
+
+</body>
+</html>
